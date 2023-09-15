@@ -1,0 +1,12 @@
+name: yu
+college: ECNU
+
+hydra:
+  run:
+    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S_%f${uuid:}}
+  sweep:
+    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S_%f}
+    subdir: ${hydra.job.num}
+
+
+
