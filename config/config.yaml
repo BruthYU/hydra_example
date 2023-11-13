@@ -3,9 +3,9 @@ college: ECNU
 
 hydra:
   run:
-    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S_%f${uuid:}}
+    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S}
   sweep:
-    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S_%f}
+    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S}
     subdir: ${hydra.job.num}
 
 

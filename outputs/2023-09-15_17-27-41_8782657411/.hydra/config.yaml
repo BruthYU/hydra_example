@@ -1,8 +1,0 @@
-name: yu
-college: ECNU-BERT
-alg:
-  name: rnn
-  version: 2
-  shape:
-  - 1
-  - 1024
