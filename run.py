@@ -8,7 +8,7 @@ import struct
 from omegaconf import OmegaConf,open_dict
 from function import output
 
-# hydra config uuid
+
 
 logging.basicConfig(format='%(asctime)s - %(levelname)s [%(filename)s:%(lineno)d] %(message)s', level=logging.INFO)
 LOG = logging.getLogger(__name__)
@@ -17,6 +17,9 @@ LOG = logging.getLogger(__name__)
 def run(config):
     alg_CONFIG = dict(config.alg)
     collge_CONFIG = config.college
+
+    LOG.info(f'os.getcwd(): {os.getcwd()}')
+    LOG.info(f'hydra.utils.get_original_cwd(): {hydra.utils.get_original_cwd()}')
 
     LOG.info(f'[-alg CONFIG-] : {config.alg.version}')
     LOG.info(f'[-alg CONFIG-] : 123')
