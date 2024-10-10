@@ -10,13 +10,11 @@ from function import output
 
 
 
-logging.basicConfig(format='%(asctime)s - %(levelname)s [%(filename)s:%(lineno)d] %(message)s', level=logging.INFO)
+
 LOG = logging.getLogger(__name__)
 
 @hydra.main(config_path='config', config_name='config')
 def run(config):
-    alg_CONFIG = dict(config.alg)
-    collge_CONFIG = config.college
 
     LOG.info(f'os.getcwd(): {os.getcwd()}')
     LOG.info(f'hydra.utils.get_original_cwd(): {hydra.utils.get_original_cwd()}')

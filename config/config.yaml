@@ -1,3 +1,7 @@
+defaults:
+  - alg: rnn
+  - model: BERT
+
 name: yu
 college: ECNU
 

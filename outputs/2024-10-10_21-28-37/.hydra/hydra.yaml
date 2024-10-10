@@ -111,13 +111,11 @@ hydra:
   overrides:
     hydra:
     - hydra.mode=RUN
-    task:
-    - +alg=rnn
-    - +model=BERT
+    task: []
   job:
     name: run
     chdir: null
-    override_dirname: +alg=rnn,+model=BERT
+    override_dirname: ''
     id: ???
     num: ???
     config_name: config
@@ -142,7 +140,7 @@ hydra:
     - path: ''
       schema: structured
       provider: schema
-    output_dir: /home/yu/code/hydra_example/outputs/2023-11-13_12-20-04
+    output_dir: /home/yu/code/hydra_example/outputs/2024-10-10_21-28-37
     choices:
       model: BERT
       alg: rnn

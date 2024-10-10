@@ -1,0 +1,5 @@
+[2024-10-10 21:28:37,248][__main__][INFO] - os.getcwd(): /home/yu/code/hydra_example/outputs/2024-10-10_21-28-37
+[2024-10-10 21:28:37,248][__main__][INFO] - hydra.utils.get_original_cwd(): /home/yu/code/hydra_example
+[2024-10-10 21:28:37,248][__main__][INFO] - [-alg CONFIG-] : 2
+[2024-10-10 21:28:37,248][__main__][INFO] - [-alg CONFIG-] : 123
+[2024-10-10 21:28:37,248][function][INFO] - [-function Info-] : Hello Hydra
